@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from './components/Footer/Footer';
+import ContactForm from './components/ContactForm/ContactForm';
 import Header from './components/Header/Header';
 import Quote from './components/Quote/Quote';
 
@@ -7,7 +9,9 @@ function App() {
     <div className="App">
       <Header />
       <Quote />
-    </div>
+      <ContactForm />
+     <Footer />
+   </div>
   );
 }
 
