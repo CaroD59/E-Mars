@@ -1,9 +1,10 @@
-import SampleComponent from './components/SampleComponent';
+import React from 'react';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <SampleComponent />
+      <Header />
     </div>
   );
 }
