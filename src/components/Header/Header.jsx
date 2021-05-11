@@ -5,7 +5,7 @@ function Header() {
   return (
     <HeaderCss>
       <div>
-        <img src="logo.png" alt="logo" className="logo" />
+        <img src="robot.png" alt="logo" className="logo" />
       </div>
       <div className="Title">
         <h1>WELCOME TO MARS</h1>

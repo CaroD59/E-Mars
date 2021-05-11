@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const StyledFooter = styled.div`
-  width: 90vw;
+  width: auto;
   margin: auto;
-  background-color: #808080;
+  background-color: #C9CCD9;
   a {
   color:black;
   text-decoration: none; 
