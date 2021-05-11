@@ -1,5 +1,7 @@
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import MessageGallery from './components/MessageGallery';
+
 
 export default function App() {
   return (
