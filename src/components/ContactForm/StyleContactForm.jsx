@@ -8,7 +8,7 @@ const StyleContactForm = styled.div`
   width: 50vw;
   form {
     font-size: 16px;
-    margin: 10%;
+    margin-left: 10%;
     padding: 10%;
     height: auto;
     display: flex;
