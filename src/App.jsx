@@ -4,6 +4,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import ContactForm from './components/ContactForm/ContactForm';
 import Footer from './components/Footer/Footer';
+import Quote from './components/Quote/Quote';
 
 function App() {
   const StyleApp = styled.div`
@@ -15,6 +16,7 @@ function App() {
       <Reset />
       <div className="App">
         <Header />
+        <Quote />
         <ContactForm />
         <Footer />
       </div>
