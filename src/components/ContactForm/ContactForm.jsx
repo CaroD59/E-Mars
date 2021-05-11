@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import StyleContactForm from './StyleContactForm';
 
 export default function ContactForm() {
   const [name, setName] = useState('');
@@ -13,32 +14,35 @@ export default function ContactForm() {
   };
 
   return (
-    <form>
-      <label htmlFor="name">
-        Name :
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Write your name here"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-      </label>
-      <label htmlFor="message">
-        Message :
-        <input
-          type="text"
-          name="message"
-          id="message"
-          placeholder="Type your message here"
-          value={userMessage}
-          onChange={(e) => setUserMessage(e.target.value)}
-        />
-      </label>
-      <button type="submit" onClick={display}>
-        Submit
-      </button>
-    </form>
+    <StyleContactForm>
+      <div>
+        <form>
+          <div className="title">Contact</div>
+          <label htmlFor="name">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+          <label htmlFor="message">
+            <textarea
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Type your message here"
+              value={userMessage}
+              onChange={(e) => setUserMessage(e.target.value)}
+            />
+          </label>
+          <button type="submit" onClick={display}>
+            Submit
+          </button>
+        </form>
+      </div>
+    </StyleContactForm>
   );
 }
