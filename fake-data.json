@@ -1,0 +1,9 @@
+{
+  "messages": [
+    {
+      "_id": "1",
+      "auteur": "Julien",
+      "message": "Hello world"
+    }
+  ]
+}
