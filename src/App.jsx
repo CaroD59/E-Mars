@@ -1,11 +1,14 @@
-import SampleComponent from './components/SampleComponent';
+import { Switch, Route } from 'react-router-dom';
+import MessageGallery from './components/MessageGallery';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <SampleComponent />
+      <Switch>
+        <Route exact path="/">
+          <MessageGallery />
+        </Route>
+      </Switch>
     </div>
   );
 }
-
-export default App;
