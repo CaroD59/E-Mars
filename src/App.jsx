@@ -1,9 +1,9 @@
-import SampleComponent from './components/SampleComponent';
+import ContactForm from './components/ContactForm/ContactForm';
 
 function App() {
   return (
     <div className="App">
-      <SampleComponent />
+      <ContactForm />
     </div>
   );
 }
