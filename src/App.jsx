@@ -1,12 +1,16 @@
 import React from 'react';
-import EssaiApi from './components/EssaiApi/EssaiApi';
+import { Switch, Route } from 'react-router-dom';
+import MessageGallery from './components/MessageGallery';
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <EssaiApi />
+      <Switch>
+        <Route exact path="/">
+          <MessageGallery />
+        </Route>
+      </Switch>
     </div>
   );
 }
-
-export default App;
