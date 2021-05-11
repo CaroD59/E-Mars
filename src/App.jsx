@@ -1,18 +1,19 @@
-
-import ContactForm from './components/ContactForm/ContactForm';
-
+import styled from 'styled-components';
 import React from 'react';
 import Header from './components/Header/Header';
-
+import ContactForm from './components/ContactForm/ContactForm';
 
 function App() {
+  const StyleApp = styled.div`
+    background-color: #ebecf0;
+  `;
   return (
-    <div className="App">
-      <Header />
-      <ContactForm />
-   
-
-    </div>
+    <StyleApp>
+      <div className="App">
+        <Header />
+        <ContactForm />
+      </div>
+    </StyleApp>
   );
 }
 
