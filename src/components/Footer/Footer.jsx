@@ -13,7 +13,7 @@ function Footer() {
               alt="adresse"
             />
             <p>4 Avenue des Saules </p>
-            <p> Bâtiment le Doge - 59160 LILLE</p>
+            <p> Bâtiment Le Doge - 59160 LILLE</p>
           </div>
           <div className="email">
             <img
@@ -21,7 +21,7 @@ function Footer() {
               alt="mail"
             />
             <p>
-              <a href="mailto:johnDoe@gmail.com">johnDoe@gmail.com</a>
+              <a href="mailto:johnDoe@gmail.com">JohnDoe@gmail.com</a>
             </p>
           </div>
           <div className="phone">
@@ -30,7 +30,7 @@ function Footer() {
               alt="phone"
             />
             <p>
-              <a href="tel:+33908070605">(33)0908070605 </a>
+              <a href="tel:+33908070605">06 42 44 83 97 </a>
             </p>
           </div>
         </div>
@@ -38,9 +38,6 @@ function Footer() {
       <div className="infos">
         <a href="https://www.wildcodeschool.com/fr-FR/condition-generales-utilisation">
           General Conditions of Use
-        </a>
-        <a href="https://www.wildcodeschool.com/fr-FR/charte-donnees-personnelles">
-          !
         </a>
         <h3>©2021 E-MARS ALL RIGHTS RESERVED</h3>
       </div>

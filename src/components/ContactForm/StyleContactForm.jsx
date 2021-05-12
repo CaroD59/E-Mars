@@ -5,15 +5,15 @@ const StyleContactForm = styled.div`
   font-family: 'Roboto', sans-serif;
   letter-spacing: -0.2px;
   height: 100vh;
-  width: 50vw;
+  width: 100vw;
   form {
     font-size: 16px;
-    margin-left: 10%;
-    padding: 10%;
+    padding: 50px 10%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   input {
     border: none;
@@ -25,7 +25,6 @@ const StyleContactForm = styled.div`
     font-size: 16px;
     margin-right: 8px;
     box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
-    width: 100%;
     height: 45px;
     box-sizing: border-box;
     transition: margin-right 2s;
@@ -48,8 +47,8 @@ const StyleContactForm = styled.div`
     text-align: center;
     background-color: #ebecf0;
     border-radius: 30px;
-    width: 100%;
-    height: 190px;
+    width: 590px;
+    height: 212px;
     text-shadow: 1px 1px 0 #fff;
   }
   textarea:hover,
@@ -68,7 +67,7 @@ const StyleContactForm = styled.div`
     border: none;
     border-radius: 30px;
     box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
-    width: 40%;
+    width: 175px;
     height: 45px;
   }
   button:hover,
@@ -81,11 +80,12 @@ const StyleContactForm = styled.div`
     transform: translateY(4px);
   }
   .title {
-    font-size: 30px;
     padding: 32px 0;
     text-align: center;
     color: #babecc;
     text-shadow: 3px 1px 1px #fff;
+    font-weight: 700;
+    font-size: 36px;
   }
 `;
 

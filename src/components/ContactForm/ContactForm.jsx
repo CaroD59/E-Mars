@@ -1,4 +1,6 @@
+
 import { Link, useHistory } from 'react-router-dom';
+import axios from 'axios';
 import { useState } from 'react';
 import StyleContactForm from './StyleContactForm';
 
@@ -9,17 +11,30 @@ export default function ContactForm() {
 
   const display = (e) => {
     e.preventDefault();
+
     setUserMessage('');
 
     setUserMessage([userMessage]);
     history.push('/NextPage');
+
+    // setUserMessage('');
+
+    axios.post('http://localhost:5050/messages', {
+      name,
+      emessage: userMessage,
+    });
+
+    alert('Your message has been sent o/ !');
+    // setUserMessage([userMessage]);
+    // console.log(`${name} + ${userMessage}`);
+
   };
 
   return (
     <StyleContactForm>
       <div>
         <form>
-          <div className="title">Contact</div>
+          <div className="title">CONTACT</div>
           <label htmlFor="name">
             <input
               type="text"

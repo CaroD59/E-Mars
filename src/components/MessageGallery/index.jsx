@@ -4,7 +4,7 @@ import axios from 'axios';
 import Message from '../Message';
 // import styled from 'styled-components';
 
-export default function App() {
+export default function MessageGallery() {
   const [emessages, setEmessages] = useState([]);
 
   useEffect(() => {
@@ -16,6 +16,7 @@ export default function App() {
   return (
     <div className="App">
       {emessages.map((emessage) => {
+        console.log(emessage);
         return <Message {...emessage} />;
       })}
     </div>
