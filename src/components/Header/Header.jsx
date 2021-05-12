@@ -7,9 +7,6 @@ function Header() {
       <div>
         <img src="robot.png" alt="logo" className="logo" />
       </div>
-      <div className="Title">
-        <h1>WELCOME TO MARS</h1>
-      </div>
     </HeaderCss>
   );
 }
