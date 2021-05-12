@@ -17,7 +17,7 @@ export default function ContactForm() {
     <StyleContactForm>
       <div>
         <form>
-          <div className="title">Contact</div>
+          <div className="title">CONTACT</div>
           <label htmlFor="name">
             <input
               type="text"

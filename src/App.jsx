@@ -12,6 +12,7 @@ export default function App() {
   const StyleApp = styled.div`
     background-color: #ebecf0;
     margin: 0;
+    overflow: hidden;
   `;
   return (
     <StyleApp>

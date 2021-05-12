@@ -11,8 +11,22 @@ const QuoteCss = styled.div`
     border-spacing: 50px;
   }
 
+  .Title h1 {
+    color: #333333;
+    text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .image {
+    margin-top: 40px;
+  }
+
   .quote {
-    font-style: italic;
+    color: rgb(59, 59, 59);
     padding-top: 20px;
     margin-top: 20px;
     margin-left: 40px;
@@ -29,7 +43,9 @@ const QuoteCss = styled.div`
     font-size: 20px;
     margin-bottom: 20px;
   }
-
+  ul {
+    list-style: url('./rocket.svg');
+  }
   .p-quote {
     margin-bottom: 20px;
   }
