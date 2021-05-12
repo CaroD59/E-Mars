@@ -1,16 +1,18 @@
+import { Link, useHistory } from 'react-router-dom';
 import { useState } from 'react';
 import StyleContactForm from './StyleContactForm';
 
 export default function ContactForm() {
   const [name, setName] = useState('');
   const [userMessage, setUserMessage] = useState('');
+  const history = useHistory();
 
   const display = (e) => {
     e.preventDefault();
     setUserMessage('');
-    alert('Your message has been sent o/ !');
+
     setUserMessage([userMessage]);
-    console.log(`${name} + ${userMessage}`);
+    history.push('/NextPage');
   };
 
   return (
@@ -38,9 +40,12 @@ export default function ContactForm() {
               onChange={(e) => setUserMessage(e.target.value)}
             />
           </label>
-          <button type="submit" onClick={display}>
-            Submit
-          </button>
+
+          <Link to="/NextPage">
+            <button type="submit" onClick={display}>
+              Submit
+            </button>
+          </Link>
         </form>
       </div>
     </StyleContactForm>
