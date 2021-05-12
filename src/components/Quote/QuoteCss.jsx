@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const QuoteCss = styled.div`
+  background-color: rgb(235, 236, 240);
+
   .QuoteContainer {
     display: flex;
     text-align: center;

@@ -16,7 +16,6 @@ export default function MessageGallery() {
   return (
     <div className="App">
       {emessages.map((emessage) => {
-        console.log(emessage);
         return <Message {...emessage} />;
       })}
     </div>
