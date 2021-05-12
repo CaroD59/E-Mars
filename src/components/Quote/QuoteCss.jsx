@@ -18,7 +18,6 @@ const QuoteCss = styled.div`
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
-    margin-top: 60px;
   }
 
   .image {

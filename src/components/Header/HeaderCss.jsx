@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const HeaderCss = styled.div`
-  background-color: #c2bcb2;
-  height: 200px;
+  background: linear-gradient(#c9ccd9, #ebecf0);
+  height: 240px;
   width: auto;
   margin: auto;
 
