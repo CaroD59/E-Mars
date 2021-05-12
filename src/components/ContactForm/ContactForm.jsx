@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useState } from 'react';
 import StyleContactForm from './StyleContactForm';
 
@@ -7,10 +8,16 @@ export default function ContactForm() {
 
   const display = (e) => {
     e.preventDefault();
-    setUserMessage('');
+    // setUserMessage('');
+
+    axios.post('http://localhost:5050/messages', {
+      name,
+      emessage: userMessage,
+    });
+
     alert('Your message has been sent o/ !');
-    setUserMessage([userMessage]);
-    console.log(`${name} + ${userMessage}`);
+    // setUserMessage([userMessage]);
+    // console.log(`${name} + ${userMessage}`);
   };
 
   return (

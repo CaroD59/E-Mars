@@ -1,4 +1,3 @@
-import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import { Reset } from 'styled-reset';
@@ -13,7 +12,7 @@ export default function App() {
     background-color: #ebecf0;
     margin: 0;
     overflow: hidden;
-  `;
+`;
   return (
     <StyleApp>
       <Reset />
